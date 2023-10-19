@@ -1,0 +1,116 @@
+[
+  {
+    "title": "!NVADE SHOW!",
+    "type": "SPECIAL",
+    "episodes": 1,
+    "status": "FINISHED",
+    "animeSeason": { "season": "FALL", "year": 2020 },
+    "picture": "https://cdn.myanimelist.net/images/anime/1930/122178.jpg",
+    "synonyms": [
+      "!nvade Show!",
+      "Invade Show!",
+      "RAISE A SUILEN",
+      "RAISE A SUILEN: !NVADE SHOW!"
+    ],
+    "tags": [
+      "band",
+      "full cgi",
+      "music",
+      "primarily female cast",
+      "primarily teen cast"
+    ]
+  },
+  {
+    "title": "0",
+    "type": "SPECIAL",
+    "episodes": 1,
+    "status": "FINISHED",
+    "animeSeason": { "season": "SUMMER", "year": 2013 },
+    "picture": "https://cdn.myanimelist.net/images/anime/12/81160.jpg",
+    "synonyms": [
+      "\"Zero\"",
+      "0 (Zero)",
+      "Chiaki Kuriyama - 0",
+      "Chiaki Kuriyama - Zero",
+      "Chiaki Kuriyama: \"0\"",
+      "Chiaki Kuriyama: \u300c0\u300d",
+      "Kuriyama Chiaki - 0",
+      "\u300c0\u300d",
+      "\u6817\u5c71 \u5343\u660e\u300c0\u300d",
+      "\u6817\u5c71\u5343\u660e - 0"
+    ],
+    "tags": ["drama", "female protagonist", "indefinite", "music", "present"]
+  },
+  {
+    "title": "Aesop no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
+    "type": "MOVIE",
+    "episodes": 1,
+    "status": "FINISHED",
+    "animeSeason": { "season": "WINTER", "year": 1970 },
+    "picture": "https://cdn.myanimelist.net/images/anime/3/65151.jpg",
+    "synonyms": [
+      "\"\u3044\u305d\u3063\u3077\"\u306e\u304a\u306f\u306a\u3057\u3088\u308a \u725b\u3068\u304b\u3048\u308b",
+      "\"\u3044\u305d\u3063\u3077\"\u306e\u304a\u306f\u306a\u3057\u3088\u308a \u725b\u3068\u304b\u3048\u308b, \u3088\u304f\u3070\u3063\u305f\u72ac",
+      "From Aesop's Tales: The Bull and the Frog / The Greedy Dog",
+      "From Aesop`s Tales: The Bull and the Frog / The Greedy Dog",
+      "\u201c\u3044\u305d\u3063\u3077\u201d\u306e\u304a\u306f\u306a\u3057\u3088\u308a \u725b\u3068\u304b\u3048\u308b\u3001\u3088\u304f\u3070\u3063\u305f\u72ac"
+    ],
+    "tags": ["family friendly", "fantasy", "frogs", "kids"]
+  },
+  {
+    "title": "Ai wo Taberu",
+    "type": "MOVIE",
+    "episodes": 1,
+    "status": "FINISHED",
+    "animeSeason": { "season": "WINTER", "year": 2018 },
+    "picture": "https://cdn.myanimelist.net/images/anime/1199/133411.jpg",
+    "synonyms": [
+      "Eating \"Love & Sorrow\"",
+      "\u300c\u3042\u3044\u300d\u3092\u305f\u3079\u308b"
+    ],
+    "tags": ["drama"]
+  },
+  {
+    "title": "Bungaku Shoujo Kyou no Oyatsu: Hatsukoi",
+    "type": "OVA",
+    "episodes": 1,
+    "status": "FINISHED",
+    "animeSeason": { "season": "FALL", "year": 2009 },
+    "picture": "https://cdn.myanimelist.net/images/anime/1671/127574.jpg",
+    "synonyms": [
+      "\"\u6587\u5b66\u5c11\u5973\"\u4eca\u65e5\u306e\u304a\u3084\u3064 ~\u306f\u3064\u604b~",
+      "Book Girl OVA",
+      "Bungaku Shoujo OVA",
+      "Bungaku Shoujo: Kyou no Oyatsu - Hatsukoi",
+      "Bungaku Sh\u014djo: Ky\u014d no Oyatsu - Hatsukoi",
+      "Literature Girl OVA",
+      "Literature Girl: Today`s Snack - First Love",
+      "\u0411\u0443\u043a\u0432\u043e\u0435\u0436\u043a\u0430: \u041f\u0435\u0440\u0432\u0430\u044f \u043b\u044e\u0431\u043e\u0432\u044c",
+      "\u201c\u6587\u5b66\u5c11\u5973\u201d\u4eca\u65e5\u306e\u304a\u3084\u3064 \u301c\u306f\u3064\u604b\u301c",
+      "\u201c\u6587\u5b66\u5c11\u5973\u201d\u4eca\u65e5\u306e\u304a\u3084\u3064 \uff5e\u306f\u3064\u604b\uff5e",
+      "\u6587\u5b66\u5c11\u5973 \u4eca\u65e5\u306e\u304a\u3084\u3064 \u301c\u306f\u3064\u604b\u301c",
+      "\u6587\u5b66\u5c11\u5973 \u4eca\u65e5\u7684\u70b9\u5fc3\uff5e\u521d\u604b\uff5e"
+    ],
+    "tags": [
+      "asia",
+      "based on a light novel",
+      "comedy",
+      "drama",
+      "earth",
+      "fantasy",
+      "japan",
+      "library",
+      "novel",
+      "present",
+      "psychological drama",
+      "romance",
+      "school",
+      "school club",
+      "school clubs",
+      "school life",
+      "seinen",
+      "short movie",
+      "slice of life"
+    ]
+  }
+]
