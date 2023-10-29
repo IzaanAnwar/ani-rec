@@ -1,21 +1,11 @@
 import express, { Request, Response } from "express";
-import { Condition, MongoClient, ObjectId } from "mongodb";
+import { IAnime } from "../../../packages/types/anime";
+import { MongoClient, ObjectId } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
 
-interface IAnime {
+export interface IAnimeDoc extends Omit<IAnime, "_id"> {
   _id: ObjectId;
-  title: string;
-  type: string;
-  episodes: number;
-  status: "FINISHED" | "ONGOING" | "UPCOMING" | "UNKNOWN";
-  animeSeason: {
-    season: "FALL" | "SUMMER" | "WINTER" | "SPRING" | "UNDEFINED";
-    year: number;
-  };
-  picture: string;
-  synonyms: [string];
-  tags: [string];
 }
 const app = express();
 app.use(express.json());
@@ -30,16 +20,18 @@ client
     console.error("[Error connecting to MongoDB]: ", err);
   });
 
-type AnimeTitle = Pick<IAnime, "_id" | "title" | "tags">;
-type AnimeTags = Pick<IAnime, "tags">;
+type AnimeTitle = Pick<IAnimeDoc, "_id" | "title" | "tags">;
+type AnimeTags = Pick<IAnimeDoc, "tags">;
 
 app.post("/recommend", async (req: Request, res: Response) => {
   const { animeTags, animeId }: { animeTags: AnimeTags[]; animeId: string } =
     await req.body;
   if (!animeTags || !animeTags.length || !animeId) {
+    console.log(typeof animeId, typeof animeTags);
+
     return res.status(400).json({
       message:
-        "Please provide an AnimeTags, and the animeId to proceed with the query",
+        "Please provide  AnimeTags, and the animeId to proceed with the body",
     });
   }
 
@@ -62,9 +54,9 @@ app.post("/recommend", async (req: Request, res: Response) => {
       },
       { $limit: 20 },
     ];
-    const anime = await animeColl.aggregate<IAnime>(queryAggr).toArray();
+    const anime = await animeColl.aggregate<IAnimeDoc>(queryAggr).toArray();
 
-    res.json({ anime });
+    res.json(anime);
   } catch (error) {
     console.error(error);
 
