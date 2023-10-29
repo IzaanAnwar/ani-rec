@@ -1,0 +1,1 @@
+# Monorepo for Anime Recommendations platform
