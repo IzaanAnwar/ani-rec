@@ -36,7 +36,6 @@ type AnimeTags = Pick<IAnime, "tags">;
 app.post("/recommend", async (req: Request, res: Response) => {
   const { animeTags, animeId }: { animeTags: AnimeTags[]; animeId: string } =
     await req.body;
-  console.log("tags", animeTags);
   if (!animeTags || !animeTags.length || !animeId) {
     return res.status(400).json({
       message:
