@@ -6,17 +6,20 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 dotenv.config();
 
+const uri = process.env.MONGODB_URL;
+const allowedUrl = process.env.ALLOWED_URL;
+const allowedUrl2 = process.env.ALLOWED_URL_2;
+
 const app = express();
 app.use(express.json());
 app.use(helmet());
 app.use(
   cors({
-    origin: 'http://127.0.0.1:5173',
+    origin: allowedUrl || allowedUrl2,
     methods: 'GET,POST',
     optionsSuccessStatus: 204,
   }),
 );
-const uri = process.env.MONGODB_URL;
 const client = new MongoClient(uri);
 client
   .connect()
