@@ -8,6 +8,7 @@ dotenv.config();
 
 const uri = process.env.MONGODB_URL;
 const allowedUrl = process.env.ALLOWED_URL;
+const allowedUrlTest = process.env.ALLOWED_URL_TEST;
 const allowedUrl2 = process.env.ALLOWED_URL_2;
 
 const app = express();
@@ -15,7 +16,7 @@ app.use(express.json());
 app.use(helmet());
 app.use(
   cors({
-    origin: allowedUrl || allowedUrl2,
+    origin: allowedUrl ? allowedUrl: allowedUrl2,
     methods: 'GET,POST',
     optionsSuccessStatus: 204,
   }),
@@ -71,6 +72,8 @@ app.post('/recommend', async (req: Request, res: Response) => {
 });
 
 app.get('/', async (req: Request, res: Response) => {
+  console.log(process.env.NODE_ENV);
+
   const { searchParam } = req.query;
 
   const db = client.db();

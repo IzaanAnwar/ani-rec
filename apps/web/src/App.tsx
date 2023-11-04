@@ -9,13 +9,15 @@ function App() {
   const handleSearch = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!searchParam) {
-      console.log('______');
-
       return;
     }
-    const url = 'http://localhost:3000';
+    const url = import.meta.env.VITE_SERVER_URL;
+    console.log('url \n\n\\n\n', url);
+
     try {
       const res = await fetch(`${url}/?searchParam=${searchParam}`);
+      console.log(res, 'res');
+
       const data = await res.json();
       console.log(data);
 
@@ -29,7 +31,7 @@ function App() {
     } catch (error: any) {
       setErr(error.message);
       if (error instanceof Error) {
-        console.error(error);
+        console.log(error);
       }
     }
   };
