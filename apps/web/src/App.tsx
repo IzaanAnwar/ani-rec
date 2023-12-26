@@ -12,6 +12,7 @@ function App() {
       return;
     }
     const url = import.meta.env.VITE_SERVER_URL;
+    // const url2 = 'http:localhost:3000/';
     console.log('url \n\n\\n\n', url);
 
     try {

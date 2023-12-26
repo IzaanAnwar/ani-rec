@@ -16,7 +16,8 @@ app.use(express.json());
 app.use(helmet());
 app.use(
   cors({
-    origin: allowedUrl ? allowedUrl: allowedUrl2,
+    // origin: allowedUrl ? allowedUrl: allowedUrl2,
+    origin: allowedUrl,
     methods: 'GET,POST',
     optionsSuccessStatus: 204,
   }),
