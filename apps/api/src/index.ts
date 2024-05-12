@@ -4,20 +4,20 @@ import { IAnimeCard, AnimeTags, AnimeTitle } from '../anime_types/anime';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import morgan from "morgan"
 dotenv.config();
 
 const uri = process.env.MONGODB_URL;
 const allowedUrl = process.env.ALLOWED_URL;
-const allowedUrlTest = process.env.ALLOWED_URL_TEST;
-const allowedUrl2 = process.env.ALLOWED_URL_2;
+
 
 const app = express();
+app.use(morgan("combined"))
 app.use(express.json());
 app.use(helmet());
 app.use(
   cors({
-    // origin: allowedUrl ? allowedUrl: allowedUrl2,
-    origin: allowedUrl,
+    origin: 'https://ani-rec.vercel.app',
     methods: 'GET,POST',
     optionsSuccessStatus: 204,
   }),
