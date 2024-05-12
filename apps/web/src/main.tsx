@@ -4,16 +4,27 @@ import App from './App.tsx';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import AnimeRecommendations from './components/AnimeRecommendations.tsx';
+import { Navbar } from './components/navbar.tsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: (
+      <>
+        <Navbar />
+        <App />
+      </>
+    ),
     errorElement: <div className="text-center ">Something Went Wrong Try Again</div>,
   },
   {
     path: '/recommendations',
-    element: <AnimeRecommendations />,
+    element: (
+      <>
+        <Navbar />
+        <AnimeRecommendations />
+      </>
+    ),
     errorElement: <div className="text-center ">Something Went Wrong Try Again</div>,
   },
 ]);
