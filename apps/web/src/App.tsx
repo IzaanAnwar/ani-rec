@@ -16,9 +16,7 @@ function App() {
       if (!searchParam) {
         return;
       }
-      const url = 'http://localhost:3000';
-      // const url2 = 'http:localhost:3000/';
-      console.log('url \n\n\\n\n', url);
+      const url = 'https://ani-rec-api.vercel.app/';
 
       try {
         const res = await fetch(`${url}?searchParam=${searchParam}`);
