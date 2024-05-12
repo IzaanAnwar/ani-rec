@@ -1,4 +1,4 @@
-import { FormEvent, useCallback, useEffect, useState } from 'react';
+import { FormEvent, useCallback, useState } from 'react';
 import { AnimeTitle } from '../../api/anime_types/anime';
 import { Link } from 'react-router-dom';
 import { Loader2 } from 'lucide-react';
@@ -16,7 +16,7 @@ function App() {
       if (!searchParam) {
         return;
       }
-      const url = 'http://localhost:3000'; //import.meta.env.VITE_SERVER_URL;
+      const url = 'http://localhost:3000';
       // const url2 = 'http:localhost:3000/';
       console.log('url \n\n\\n\n', url);
 
