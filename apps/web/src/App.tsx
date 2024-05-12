@@ -16,7 +16,7 @@ function App() {
       if (!searchParam) {
         return;
       }
-      const url = 'https://ani-rec-api.vercel.app';
+      const url = 'https://ani-rec.onrender.com';
 
       try {
         const res = await fetch(`${url}?searchParam=${searchParam}`);

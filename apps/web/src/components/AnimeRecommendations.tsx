@@ -15,7 +15,7 @@ export default function AnimeRecommendations() {
     setLoading(true);
     const fetchData = async () => {
       try {
-        const res = await fetch('https://ani-rec-api.vercel.app/recommend', {
+        const res = await fetch('https://ani-rec.onrender.com/recommend', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
